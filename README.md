@@ -131,8 +131,8 @@ if (something == nil) {
 }
 
 NSArray *selected = [_selected allObjects];
-NSString *subjectID = [selected count] > 0 ? selected[0] : nil;
-if (subjectID) {
+if ([selected count]) {
+	NSString *subjectID = selected[0];
 	indexPath = [self indexPathOfSubject:subjectID];
 }
 ```
