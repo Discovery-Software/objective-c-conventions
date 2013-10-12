@@ -85,13 +85,9 @@ void GHAwesomeFunction(BOOL hasSomeArgs);
   * Checking `!strlen(s)` is preferred to `strlen(s) == 0`.
   * Checking `!object` is preferred than `object != nil`.
  * Prefer positive comparisons to negative.
- * Long form ternary operators should be wrapped in parentheses and only used for assignment and arguments.
-
-```objc
-Blah *a = (stuff == thing ? foo : bar);
-```
-
-* Short form, `nil` coalescing ternary operators should avoid parentheses.
+ * Long form ternary operators should only used for assignment and arguments.
+  * Assigning to a temporary variable is great! It makes the code easier to read and debug.
+ * Short form, `nil` coalescing ternary operators are awesome. Use them when appropriate:
 
 ```objc
 Blah *b = thingThatCouldBeNil ?: defaultValue;
