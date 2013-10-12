@@ -64,6 +64,13 @@ Unless explicitly contradicted below, assume that all of Apple's guidelines appl
 @property (nonatomic, strong) NSObject<Protocol> *object;
 ```
  
+ * If an object type conforms to multiple protocols, put a space between them.
+ 
+```objc
+@property (attributes) id<Protocol1, Protocol2> object;
+@property (nonatomic, strong) NSObject<Protocol1, Protocol2> *object;
+```
+
  * C function declarations should have no space before the opening parenthesis, and should be namespaced just like a class.
 
 ```objc
