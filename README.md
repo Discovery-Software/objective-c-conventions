@@ -49,6 +49,7 @@ Unless explicitly contradicted below, assume that all of Apple's guidelines appl
 ## Declarations
 
  * Never declare an ivar that backs a property unless you need to change its type from its declared property.
+ * Never declare an ivar in a header file. Instead, declare it immediately after an `@implementation`.
  * Don’t use line breaks in method declarations.
  * Prefer exposing an immutable type for a property if it being mutable is an implementation detail. This is a valid reason to declare an ivar for a property.
  * Always declare memory-management semantics even on `readonly` properties.
