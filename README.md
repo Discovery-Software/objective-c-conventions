@@ -116,10 +116,12 @@ for (int i = 0; i < 10; i++) {
  * All curly braces should begin on the same line as their associated statement. They should end on a new line.
  * Put a single space after keywords and before their parentheses.
  * Return and break early.
+ * Return and break often.
  * No spaces between parentheses and their contents.
 
 ```objc
 if (shitIsBad) return;
+if (otherShitIsBad) return;
 
 if (something == nil) {
 	// do stuff
