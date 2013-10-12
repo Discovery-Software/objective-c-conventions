@@ -81,7 +81,9 @@ void GHAwesomeFunction(BOOL hasSomeArgs);
  * Don't access an ivar unless you're in `-init`, `-dealloc` or a custom accessor.
  * Use dot-syntax when invoking idempotent methods, including setters and class methods (like `NSFileManager.defaultManager`).
  * Use object literals, boxed expressions, and subscripting over the older, grosser alternatives.
- * Comparisons should be explicit for everything except `BOOL`s.
+ * Comparisons should be simple and implicit when possible:
+  * Checking `!strlen(s)` is preferred to `strlen(s) == 0`.
+  * Checking `!object` is preferred than `object != nil`.
  * Prefer positive comparisons to negative.
  * Long form ternary operators should be wrapped in parentheses and only used for assignment and arguments.
 
