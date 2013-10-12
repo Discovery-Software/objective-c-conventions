@@ -118,6 +118,7 @@ for (int i = 0; i < 10; i++) {
  * Return and break early.
  * Return and break often.
  * No spaces between parentheses and their contents.
+ * Your conditions should reflect your intent.
 
 ```objc
 if (shitIsBad) return;
@@ -127,6 +128,12 @@ if (something == nil) {
 	// do stuff
 } else {
 	// do other stuff
+}
+
+NSArray *selected = [_selected allObjects];
+NSString *subjectID = [selected count] > 0 ? selected[0] : nil;
+if (subjectID) {
+	indexPath = [self indexPathOfSubject:subjectID];
 }
 ```
 
