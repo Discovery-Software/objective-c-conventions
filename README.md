@@ -119,6 +119,7 @@ for (int i = 0; i < 10; i++) {
  * Return and break often.
  * No spaces between parentheses and their contents.
  * Your conditions should reflect your intent.
+  * Use temporary variables to clarify your intent, if necessary.
 
 ```objc
 if (shitIsBad) return;
